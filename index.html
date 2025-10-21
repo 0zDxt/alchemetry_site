@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alchemetry — Agence de développement web premium</title>
+    <meta name="description"
+        content="Alchemetry — Agence spécialisée dans le design et le développement de sites web premium. React & Next.js, UX/UI, stratégie produit, SEO et accessibilité." />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;800&family=Fjalla+One&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Alchemetry" />
+    <meta property="og:description" content="We craft high-performing websites that captivate audiences." />
+    <meta property="og:image" content="https://alchemetry.xyz/images/alchemetryOGP.webp" />
+    <meta property="og:url" content="https://alchemetry.xyz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alchemetry" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alchemetry" />
+    <meta name="twitter:description" content="We craft high-performing websites that captivate audiences" />
+    <meta name="twitter:image" content="https://alchemetry.xyz/images/alchemetryOGP.webp" />
+
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ====================== -->
+    <!-- NAVBAR -->
+    <!-- ====================== -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="brand"><span class="dot"></span> ALCHEMETRY</a>
+
+            <!-- Nav Desktop -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact"><span class="ring"></span>Contact</a></li>
+                </ul>
+            </nav>
+
+                <!-- Burger Mobile -->
+            <div class="burger" id="burger" aria-label="Menu mobile" aria-expanded="false" role="button" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu mobile overlay -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#expertise">Expertise</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="btn primary"><span class="ring"></span>Contact</a>
+    </nav>
+
+    <!-- ====================== -->
+    <!-- INTRO -->
+    <!-- 
+    <div class="first-intro">
+        <p class="decouvrir">Démarrez votre odyssée web</p>
+        <h1 class="intro-logo">Alchemetry<span class="orange">.</span></h1>
+    </div>
+    ====================== -->
+
+    <!-- ====================== -->
+    <!-- MAIN CONTAINER PHOTOS -->
+    <!-- ====================== -->
+    <div class="main-container-photo">
+        <div class="container-photo">
+            <div class="box box-1" style="--img: url('/images/visages/alchemy1.webp');" data-text="From"></div>
+            <div class="box box-2" style="--img: url('/images/visages/alchemy2.webp');" data-text="Scratch"></div>
+            <div class="box box-3" style="--img: url('/images/visages/alchemy3.webp');" data-text="To"></div>
+            <div class="box box-4" style="--img: url('/images/visages/alchemy4.webp');" data-text="The"></div>
+            <div class="box box-5" style="--img: url('/images/visages/alchemy5.webp');" data-text="Moon"></div>
+        </div>
+    </div>
+
+    <!-- ====================== -->
+    <!-- CONTAINER TEXT -->
+    <!-- ====================== -->
+    <div class="container-text">
+        <p>A brand is not just a label.</p>
+        <p>It embodies a vision, values and identity.</p>
+        <p>
+            <span>Alchemetry is the digital craftmanship dedicated to your performance</span>
+            <span class="orange">.</span>
+        </p>
+    </div>
+
+    <!-- ====================== -->
+    <!-- DIVIDER -->
+    <!-- ====================== -->
+    <div class="divider" id="expertise"></div>
+
+    <!-- ====================== -->
+    <!-- EXPERTISE -->
+    <!-- ====================== -->
+    <section class="containerTwo" id="section1">
+
+        <h1 class="gradient-text">
+            <span id="animatedTitle">{ Web development }</span>
+        </h1>
+        <div class="containerTwo_textIcons">
+            <div class="container_text">
+                <img src="/images/containers/containerFour.webp" alt="Expertise en développement web" />
+                <div class="paragraphs">
+                    <p>Our projects combine sleek design and precision, with a particular focus on SEO and making websites accessible to all.</p>
+                    <p>Our approach goes beyond designing your brand identity; it also includes rigorous optimization to ensure visibility at the top of search results.</p>
+                </div>
+            </div>
+            <div class="containerTwo_icons">
+                <img src="/images/logoHtml.svg" alt="HTML5" />
+                <img src="/images/logoCss3.svg" alt="CSS3" />
+                <img src="/images/logoJavascript.svg" alt="JavaScript" />
+                <img src="/images/logoScss.svg" alt="SCSS" />
+                <img src="/images/react-2.svg" alt="React" />
+                <img src="/images/python-logo-only.svg" alt="python" />
+            </div>
+        </div>
+        <div class="grid cols-3">
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/pen-line-svgrepo-com.svg" alt="Strategy icon" class="expertise-icon" />
+                <h3>Strategy & Ideation</h3>
+                <p>We study the market, craft a clear product vision, and build a solid roadmap. No nonsense, just results.</p>
+            </article>
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/mobile-alt-2-svgrepo-com.svg" alt="Dev icon" class="expertise-icon" />
+                <h3>Design & Engineering</h3>
+                <p>Premium UX/UI with modern React & Next.js development. Sleek, fast sites with top-tier code and smooth flows.</p>
+            </article>
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/rocket.svg" alt="Growth icon" class="expertise-icon" />
+                <h3>Launch & Growth</h3>
+                <p>From launch to growth, we ensure the site scales, gains traffic, and lives in users’ browsers.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ====================== -->
+    <!-- DIVIDER -->
+    <!-- ====================== -->
+    <div class="divider" id="services"></div>
+
+    <!-- ====================== -->
+    <!-- SERVICES -->
+    <!-- ====================== -->
+    <section class="containerThree" id="section2">
+        <h2>
+            <span class="gradient-text">{ Services }</span>
+        </h2>
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track" id="marquee-services">
+                <span class="badge">SEO Optimization</span>
+                <span class="badge">Accessibility Compliance</span>
+                <span class="badge">E-commerce Setup</span>
+                <span class="badge">Shopify Integration</span>
+                <span class="badge">Blog CMS</span>
+                <span class="badge">Content Strategy</span>
+                <span class="badge">WCAG Standards</span>
+                <span class="badge">Small Business Growth</span>
+            </div>
+        </div>
+        <div class="container_text">
+            <div class="paragraphs">
+                <p>In this unforgiving digital world, visibility is essential. We are fully dedicated to SEO, developing strategies that will propel your site to the top of search results.</p>
+                <p>Precise keywords, powerful content, backed by a solid network of backlinks. Let's make you a trend!</p>
+            </div>
+            <img src="/images/containers/containerThree.webp" alt="Services spécialisés" />
+        </div>
+        <figure>
+            <figcaption>Because you come first</figcaption>
+        </figure>
+        <div class="grid cols-3">
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/search-svgrepo-com.svg" alt="SEO icon" class="expertise-icon" />
+                <h3>SEO & Accessibility</h3>
+                <p>We optimize for top search rankings while ensuring full WCAG compliance, making your site visible and inclusive.</p>
+            </article>
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/cart-svgrepo-com.svg" alt="E-commerce icon" class="expertise-icon" />
+                <h3>E-commerce for SMEs</h3>
+                <p>Shopify or custom solutions for startups and small businesses, focused on smooth sales without complexity.</p>
+            </article>
+            <article class="card reveal expertise-card">
+                <div class="shine" aria-hidden="true"></div>
+                <img src="/images/blog-svgrepo-com.svg" alt="Blog icon" class="expertise-icon" />
+                <h3>Blog Development</h3>
+                <p>WordPress or custom headless CMS blogs that engage, integrate SEO, and scale with your content strategy.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ====================== -->
+    <!-- DIVIDER -->
+    <!-- ====================== -->
+    <div class="divider" id="contact"></div>
+
+    <!-- ====================== -->
+    <!-- CONTACT -->
+    <!-- ====================== -->
+    <section class="contact" id="section4">
+        <h1 class="gradient-text">Let's work together</h1>
+        <form class="card reveal" id="contact-form" autocomplete="on">
+            <div class="shine" aria-hidden="true"></div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="email" placeholder="E-mail" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button class="btn primary" type="submit"><span class="ring"></span> Envoyer</button>
+            </div>
+        </form>
+        <div class="response"></div>
+    </section>
+
+    <!-- ====================== -->
+    <!-- FOOTER -->
+    <!-- ====================== -->
+    <footer>
+        <div class="footer-list">
+            <a href="https://x.com/oz_70th" target="_blank"><img src="/images/twitter-x.svg" alt="X link"></a>
+            <a href="#" target="_blank"><img src="/images/discord.svg" alt="Discord link"></a>
+            <a href="#" target="_blank"><img src="/images/instagram.svg" alt="Instagram link"></a>
+            <a href="https://github.com/0zDxt" target="_blank"><img src="/images/github.svg" alt="GitHub link"></a>
+        </div>
+        <p class="mentions">© <span id="year"></span> Alchemetry. All rights reserved. Made in Paris through insomnia.</p>
+    </footer>
+
+    <!-- ====================== -->
+    <!-- SCRIPTS -->
+    <!-- ====================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

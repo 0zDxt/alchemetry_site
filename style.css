@@ -153,7 +153,7 @@ body {
     top: 0;
     z-index: 50;
     backdrop-filter: saturate(140%) blur(12px);
-    background: rgba(17, 17, 17, .8);
+    background: rgba(17, 17, 17, .5);
     border-bottom: 1px solid var(--border);
     min-height: var(--nav-h);
     font-family: "Fjalla One", sans-serif;
@@ -201,7 +201,7 @@ body {
     color: var(--txt);
     text-decoration: none;
     font-weight: 600;
-    opacity: .7;
+    opacity: .8;
 }
 
 .nav ul li a {
@@ -318,25 +318,6 @@ header.nav .nav-inner nav ul li:last-child>a.btn {
     left: 50px;
     font-size: 1.2em;
 }
-
-/*
-.intro-logo {
-    font-family: "Climate Crisis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "YEAR" 1979;
-    color: var(--txt);
-    font-size: 3em;
-    position: absolute;
-    margin-top: 30px;
-    margin-right: 30px;
-    left: 50px;
-    opacity: 0;
-    z-index: 1;
-}
-*/
 
 /* ====================== */
 /* Main Container Photos */
@@ -795,11 +776,7 @@ footer {
     .mobile-menu {
         display: flex;
     }
-    /*
-    .section {
-        padding: calc(var(--section-pad-y) * .85) 0;
-    }
-    */
+    
     .hero-grid,
     .container_text {
         flex-direction: column;
@@ -817,14 +794,7 @@ footer {
     .main-container-photo {
         margin: 100px 20px auto;
     }
-    /*
-    .container-photo {
-        width: 90%;
-        height: auto;
-        grid-template-columns: 1fr;
-        gap: 0.5em;
-    }
-    */
+    
     .container-photo {
         height: 280px;
     }

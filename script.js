@@ -11,25 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeIn(decouvrir, 1200);
     });
 });
-/*
-function fadeIn(element, duration, callback) {
-    var opacity = 0;
-    var interval = 20;
-    var delta = interval / duration;
 
-    function increaseOpacity() {
-        opacity += delta;
-        element.style.opacity = opacity;
-
-        if (opacity >= 1) {
-            clearInterval(timer);
-            if (callback) callback();
-        }
-    }
-
-    var timer = setInterval(increaseOpacity, interval);
-}
-*/
 // Marquee for services
 const trackServices = document.getElementById('marquee-services');
 if (trackServices) {
@@ -42,27 +24,7 @@ if (trackServices) {
     loopServices();
 }
 
-/*
-// Parallax for boxes (creative mix)
-const boxes = document.querySelectorAll('.box');
-window.addEventListener('mousemove', (e) => {
-    const { innerWidth: w, innerHeight: h } = window;
-    const x = (e.clientX - w / 2) / (w / 2);
-    const y = (e.clientY - h / 2) / (h / 2);
-    boxes.forEach((box, i) => {
-        const s = (i % 2 === 0 ? 0.5 : 1);
-        box.style.transform += ` translate(${x * 5 * s}px, ${y * 5 * s}px)`;
-    });
-});
 
-// Card shine follow
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('pointermove', (e) => {
-        const r = card.getBoundingClientRect();
-        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
-    });
-});
-*/
 // GSAP reveals
 if (window.gsap && window.ScrollTrigger) {
     gsap.registerPlugin(ScrollTrigger);
@@ -195,10 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault(); // Un seul preventDefault
 
             // IDs du service et template (à adapter si besoin)
-            emailjs.sendForm('contact_service', 'contact_form', this)
+            emailjs.sendForm('service_9lahaau', 'template_uuesrgh', this)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
-                    const name = document.querySelector('input[name="name"]').value;
+                    const name = document.querySelector('input[name="name"]').value || 'Guest';
                     responseEl.innerHTML = `Merci ${name}, je vous recontacte bientôt !`;
                     responseEl.className = 'response success'; // Classe pour style
                     form.reset(); // Réinitialise le formulaire

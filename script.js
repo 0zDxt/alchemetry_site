@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                     const name = document.querySelector('input[name="name"]').value || 'Guest';
-                    responseEl.innerHTML = `Merci ${name}, je vous recontacte bientôt !`;
+                    responseEl.innerHTML = `Thanks ${name}, I'll be in touch soon !`;
                     responseEl.className = 'response success'; // Classe pour style
                     form.reset(); // Réinitialise le formulaire
                     form.style.display = 'none'; // Optionnel : Cache le formulaire après envoi

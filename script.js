@@ -57,6 +57,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Language switcher
+
+document.getElementById('switchToFr').addEventListener('click', function() {
+    switchLanguage('fr');
+});
+
+document.getElementById('switchToEn').addEventListener('click', function() {
+    switchLanguage('en');
+});
+
+function switchLanguage(lang) {
+    document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang); // Mise à jour du texte selon la langue sélectionnée
+    });
+    localStorage.setItem('preferredLanguage', lang); // Sauvegarde de la langue
+}
+
+
 // Burger menu
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");

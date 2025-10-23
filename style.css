@@ -232,6 +232,12 @@ header.nav .nav-inner nav ul li:last-child>a.btn {
 .nav a:hover {
     opacity: 1
 }
+.nav-desktop img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    transition: all .3s;
+}
 
 /* Burger Mobile */
 .burger {

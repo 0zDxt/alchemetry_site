@@ -21,9 +21,14 @@
     --btn-pad-x: clamp(16px, 1.8vw, 22px);
     --badge-gap: clamp(28px, 3.2vw, 56px);
 }
+/* Fonts */
 @font-face {
     font-family: "climate_crisis";
     src: url(/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Fjalla One";
+    src: url(/fonts/FjallaOne-Regular.ttf) format("truetype");
 }
 
 * {

@@ -844,7 +844,8 @@ footer {
 
 /* ====================== */
 /* Light Scheme */
-/* ====================== 
+/* ====================== */
+
 @media (prefers-color-scheme: light) {
     :root {
         --bg: #f0f0f0;
@@ -879,6 +880,20 @@ footer {
 
     .btn.primary {
         color: #fff;
+    }
+
+    .card {
+        background: linear-gradient(180deg, rgba(122, 122, 122, 0.02), rgba(87, 87, 87, 0));
+        border: 1px solid var(--border);
+        border-radius: var(--rounded);
+        padding: var(--card-pad);
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+        transition: transform .3s ease;
+    }
+    .marquee {
+        background: rgba(255, 255, 255, .6);
     }
 }
 */

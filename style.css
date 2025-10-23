@@ -21,6 +21,10 @@
     --btn-pad-x: clamp(16px, 1.8vw, 22px);
     --badge-gap: clamp(28px, 3.2vw, 56px);
 }
+@font-face {
+    font-family: "climate_crisis";
+    src: url(/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf) format("truetype");
+}
 
 * {
     box-sizing: border-box
@@ -170,7 +174,7 @@ body {
     display: flex;
     align-items: center;
     gap: clamp(8px, 1vw, 10px);
-    font-family: "Climate Crisis", sans-serif;
+    font-family: "climate_crisis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -443,7 +447,7 @@ h1, h2 {
     color: var(--txt);
     margin: 50px auto;
     font-size: 2em;
-    font-family: "Climate Crisis", sans-serif;
+    font-family: "climate_crisis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;

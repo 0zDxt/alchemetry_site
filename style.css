@@ -233,6 +233,7 @@ header.nav .nav-inner nav ul li:last-child>a.btn {
     opacity: 1
 }
 .nav-desktop img {
+    
     width: 24px;
     height: auto;
     cursor: pointer;

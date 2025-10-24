@@ -59,20 +59,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Language switcher
 
-document.getElementById('switchToFr').addEventListener('click', function() {
-    switchLanguage('fr');
-});
-
-document.getElementById('switchToEn').addEventListener('click', function() {
-    switchLanguage('en');
-});
+function initLanguageSwitcher() {
+    // Délégation sur le body (ou un parent commun comme document) pour capturer tous les clics sur .switch-lang
+    document.addEventListener('click', function(event) {
+        const target = event.target.closest('.switch-lang'); // Trouve l'élément .switch-lang le plus proche
+        if (target && target.dataset.lang) {
+            event.preventDefault(); // Empêche le lien par défaut si besoin
+            switchLanguage(target.dataset.lang);
+        }
+    });
+}
 
 function switchLanguage(lang) {
     document.querySelectorAll('[data-fr], [data-en]').forEach(el => {
-        el.textContent = el.getAttribute('data-' + lang); // Mise à jour du texte selon la langue sélectionnée
+        el.textContent = el.getAttribute('data-' + lang); // Mise à jour du texte
     });
-    localStorage.setItem('preferredLanguage', lang); // Sauvegarde de la langue
+    localStorage.setItem('preferredLanguage', lang); // Sauvegarde
+    // Optionnel : ferme le menu mobile si ouvert
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu && mobileMenu.classList.contains('open')) { // Suppose que tu ajoutes 'open' au burger
+        // Code pour fermer le menu (ex: toggleClass ou similaire)
+    }
 }
+
+// Initialise au chargement
+document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+
+// Chargement de la la langue préférée au démarrage
+const preferredLang = localStorage.getItem('preferredLanguage') || 'fr'; // Par défaut FR
+switchLanguage(preferredLang);
 
 
 // Burger menu

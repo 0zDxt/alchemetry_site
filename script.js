@@ -120,43 +120,6 @@ function animateTitle(elementId, speed, language) {
     animationInterval = setInterval(updateText, speed);
 }
 
-// Mouse Follower
-document.addEventListener('DOMContentLoaded', () => {
-    const mouseFollower = document.getElementById('mouseFollower');
-
-    const mouseMoveHandler = (e) => {
-        if (mouseFollower && window.innerWidth > 1020) {
-            mouseFollower.style.top = `${e.pageY}px`;
-            mouseFollower.style.left = `${e.pageX}px`;
-        }
-    };
-
-    document.addEventListener('mousemove', mouseMoveHandler);
-
-    window.onunload = () => {
-        document.removeEventListener('mousemove', mouseMoveHandler);
-    };
-});
-
-// Mobile Parallax for boxes
-if (window.innerWidth <= 768) {
-    const boxes = document.querySelectorAll('.box');
-    let lastScrollY = window.scrollY;
-
-    const updateParallax = () => {
-        const scrollY = window.scrollY;
-        boxes.forEach((box, i) => {
-            const speed = i % 2 === 0 ? 0.25 : 0.35;
-            const translateY = scrollY * speed * 0.35;
-            box.style.transform = `translateY(${translateY}px)`;
-        });
-        lastScrollY = scrollY;
-        requestAnimationFrame(updateParallax);
-    };
-
-    requestAnimationFrame(updateParallax);
-}
-
 // EmailJS Initialization
 (function() {
     // https://dashboard.emailjs.com/admin/account

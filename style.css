@@ -840,6 +840,12 @@ footer {
         flex-wrap: wrap;
         gap: 1em;
     }
+    .mobile-menu img {
+        width: 2.5em;
+        opacity: .7;
+        border-radius: 12px;
+        
+    }
 }
 
 /* ====================== */

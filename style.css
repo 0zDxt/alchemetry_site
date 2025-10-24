@@ -237,6 +237,7 @@ header.nav .nav-inner nav ul li:last-child>a.btn {
     height: auto;
     cursor: pointer;
     transition: all .3s;
+    border-radius: 4px;
 }
 
 /* Burger Mobile */

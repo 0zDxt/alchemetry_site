@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://alchemetry.xyz</loc>
+    <lastmod>2025-10-24</lastmod> <!-- Date d'aujourd'hui ; mettez à jour si changements -->
+    <changefreq>monthly</changefreq> <!-- Fréquence de mise à jour : monthly pour une landing stable -->
+    <priority>1.0</priority> <!-- Priorité haute : 1.0 pour la page principale -->
+  </url>
+</urlset>

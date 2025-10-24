@@ -800,13 +800,13 @@ footer {
         text-align: center;
     }
     .container-text p {
-    padding: 4%;
-    color: var(--txt);
-    font-size: .8em;
-    letter-spacing: 1px;
-    max-width: 60ch;
-    margin: 0 auto;
-}
+        padding: 4%;
+        color: var(--txt);
+        font-size: .8em;
+        letter-spacing: 1px;
+        max-width: 60ch;
+        margin: 0 auto;
+    }
     
     .main-container-photo {
         margin: 100px 20px auto;
@@ -853,7 +853,7 @@ footer {
 /* ====================== */
 /* Light Scheme */
 /* ====================== */
-
+/*
 @media (prefers-color-scheme: light) {
     :root {
         --bg: #f0f0f0;

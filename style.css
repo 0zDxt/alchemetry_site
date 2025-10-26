@@ -107,7 +107,7 @@ body {
     isolation: isolate;
     text-decoration: none;
     font-size: clamp(14px, 1.1vw, 15px);
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 .btn .ring {
@@ -165,7 +165,7 @@ body {
     background: rgba(17, 17, 17, .5);
     border-bottom: 1px solid var(--border);
     min-height: var(--nav-h);
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 .nav-inner {
@@ -381,7 +381,7 @@ header.nav .nav-inner nav ul li:last-child>a.btn {
     opacity: 0;
     transition: all 30ms;
     border-radius: var(--rounded);
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 .box:hover::after {
@@ -565,7 +565,7 @@ figcaption {
     color: var(--accent);
     font-size: 1.4em;
     text-align: center;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
     margin-top: 2em;
 }
 
@@ -593,7 +593,7 @@ figcaption {
     color: var(--muted);
     font-size: clamp(12px, 1.2vw, 14px);
     white-space: nowrap;
-    font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 /* ====================== */
@@ -640,7 +640,7 @@ figcaption {
 .card h3 {
     margin: 8px 0 6px;
     font-size: clamp(18px, 1.4vw, 22px);
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 .card p {
@@ -682,7 +682,7 @@ figcaption {
 }
 
 .contact h2 {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
     margin-bottom: 2em;
 }
 
@@ -722,7 +722,7 @@ figcaption {
     color: var(--accent);
     margin: 100px auto;
     text-align: center;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "DM Sans", "Fjalla One", "Pixelify Sans", system-ui, sans-serif;
 }
 
 /* ====================== */
